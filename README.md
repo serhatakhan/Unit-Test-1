@@ -1,51 +1,46 @@
-# Selectors
+# Unit Test Project 1
 
-- https://testing-library.com/docs/ecosystem-testing-library-selector/
+This project is a React unit testing project on the ice cream selection theme. The tests used in the project are as follows:
 
-# Matchers
+## Tests
 
-- https://github.com/testing-library/jest-dom
+**1 - Testing Button Activation Based on Conditions:**
 
-# Html Element Rolleri
+* A form component is rendered, and necessary elements (button and checkbox) are called.
+* It checks if the checkbox is initially unchecked and the button is disabled.
+* It verifies that clicking the checkbox activates the button and clicking again deactivates it.
 
-- https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles
+**2 - Notification Visibility Based on Button Hover Test:**
 
+* A form component is rendered, and necessary elements are retrieved (checkbox, button, notification).
+* It checks if clicking the checkbox activates the button and hides the notification.
+* It verifies that hovering over the button displays the notification and moving the mouse away hides it.
 
-# Kütüphaneler
-- axios@^0.27.2
-- @testing-library/user-event@14.0
-- json-server
-- bootstrap
+**3 - Verification of Card Component Content:**
 
+* A card component is rendered with required props (e.g., name, image path, quantity).
+* It checks if the content of the card (e.g., name, image, quantity) is correctly displayed.
 
-# Test Geliştirme Süreçleri
+**4 - Testing Correct Function Invocation on Button Click:**
 
-## TDD (Test Driven Development)
-- Diğer adı `red to green test` --> sebebi: önce test yazılır işlem olmadığı için kırmızı yanar sonra işlevler yapılınca yeşile döner.
-- Önce özelliğin/bileşenin testi yazılır. Sonra özellik/bileşen kodlanır.
-- Artısı, testler bir yük gibi gelmiyor. Geliştirme sürecinin bir parçası oluyor. Testleri yazarken dinamik yapının algoritmasını oluşturduğumuz için işlevi daha hızlı kodlayabiliyoruz.
+* Within the card component, it tests whether the add and reset buttons trigger the correct functions with the right parameters when clicked.
 
-## BDD (Behavior Driven Development)
-- Önce özellik veya bileşen geliştirilir. Sonra testleri yazılır.
+**5 - Display of Data Received from API Test:**
 
+* Within the Scoops component, it tests whether images (e.g., ice cream variety images) fetched from an API are correctly displayed.
 
-## FireEvent
-- rtl içerisinde gelen olay tetikleme metodu
-- Gerçek kullanıcıdan uzak tepkiler verdiği için yerini `userEvent`'e bıraktı. 
-- Tetiklenen olaylar gerçek bir insanın verebileceği tepkiden çok daha hızlı bir şekilde aniden tetikleniyor. Eksisi bu. (Ekle'ye tıkla dediğimizde bizim veremeyeceğimiz bir hızda 
-mouse'un ekle butonuna ışınlandığını, ışınlandığı saniye tıklandığı gibi bir durumu var.)
+**6 - Testing Addition and Reset Operations:**
 
-## UserEvent
-- Bu yolu kullanmak için userEvent paketini imdirmek gerekiyor. 
-`@testing-library/user-event@14.0`
-- fireEvent'in modern ve daha gelişmiş versiyonu
-- tetiklediğimiz olaylar, gerçek bir kullanıcının yapacağı gibi belirli bir gecikmenin
-ardından gerçekleşiyor.
-- gecikme yaşandığından "aasync-await" ile kullanırız.
-- kullanmak için de ilgili test içinde kurulumunu da yapmak gerekiyor.
+* Within the Scoops component, it tests the functionality of adding and resetting items, ensuring that the total price updates correctly and items are added and removed accurately.
 
+## Used Technologies
 
+- Axios v.0.27.2
+- Testing Library/User Event v.14.0
+- Json-Server
+- Bootstrap
 
-# Expect
+## Preview
+
 
 
