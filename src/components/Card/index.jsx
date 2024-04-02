@@ -8,7 +8,9 @@ const Card = ({item, amount, addToBasket, clearFromBasket}) => {
 
         <div className="d-flex gap-2 align-items-center">
             <button onClick={()=> clearFromBasket(item.name)} className="btn btn-sm btn-outline-danger">Sıfırla</button>
-            <span className="fs-3">{amount}</span>
+            
+            <span data-testid="amount" className="fs-3">{amount}</span>
+
             <button onClick={()=> addToBasket(item)} className="btn btn-sm btn-outline-warning">Ekle</button>
         </div>
     </div>

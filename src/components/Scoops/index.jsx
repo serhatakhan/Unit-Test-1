@@ -9,15 +9,15 @@ const Scoops = () => {
   const [basket, setBasket] = useState([]);
 
 
+  // dışardan gelen item'ı alacak, sonra bu itemı mevcut sepetteki elemanların üzerine ekleyecek
   // sepete eleman ekle
   const addToBasket = (item) => {
-    // dışardan gelen item'ı alacak, sonra bu itemı mevcut sepetteki elemanların üzerine ekleyecek
     setBasket([...basket, item]);
   };
 
   // sepetten eleman kaldır
+  // isme göre gittik
   const clearFromBasket = (name) => {
-    // isme göre gittik
     setBasket(basket.filter((i) => i.name !== name));
   };
 

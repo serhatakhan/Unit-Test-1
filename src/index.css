@@ -28,3 +28,16 @@ code {
   top: -50px;
   left: -42px;
 }
+
+.top-card {
+  border: 1px solid gray;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* içinde inputu tikli olan bir top-card varsa bu stilleri uygula demek */
+.top-card:has(input:checked) {
+  box-shadow: 0 0 15px #FFCA2C;
+  border: 1px solid #FFCA2C;
+}
