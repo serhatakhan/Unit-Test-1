@@ -42,5 +42,6 @@ This project is a React unit testing project on the ice cream selection theme. T
 
 ## Preview
 
+![Kayt2024-04-02165208-ezgif com-video-to-gif-converter](https://github.com/serhatakhan/Unit-Test-1/assets/147662915/c723badc-4228-4fc4-99e9-5a0fca73a2d0)
 
 
