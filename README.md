@@ -35,8 +35,9 @@ This project is a React unit testing project on the ice cream selection theme. T
 
 ## Used Technologies
 
+- Jest
+- React Testing Library/User Event v.14.0
 - Axios v.0.27.2
-- Testing Library/User Event v.14.0
 - Json-Server
 - Bootstrap
 
